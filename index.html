@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>শিশুর মেধা বিকাশ Play Group – February 2026</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fdf6ee;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #ff8c42, #ffcc70);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px 30px;
+      border-bottom: 5px solid #f07020;
+    }
+
+    header .star-line {
+      font-size: 1.4rem;
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-size: 1.9rem;
+      font-weight: 800;
+      text-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+      margin-bottom: 6px;
+    }
+
+    header .subtitle {
+      font-size: 1rem;
+      opacity: 0.92;
+    }
+
+    /* ── Main layout ── */
+    main {
+      max-width: 820px;
+      margin: 30px auto;
+      padding: 0 16px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    /* ── Cards ── */
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 24px 26px;
+      box-shadow: 0 3px 14px rgba(0,0,0,0.08);
+      border-left: 6px solid #ff8c42;
+    }
+
+    .card.green  { border-left-color: #34a853; }
+    .card.blue   { border-left-color: #4285f4; }
+    .card.red    { border-left-color: #ea4335; }
+    .card.purple { border-left-color: #9b59b6; }
+    .card.gold   { border-left-color: #f0a500; }
+
+    .card h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ── Tagline ── */
+    .tagline {
+      font-size: 1.05rem;
+      font-style: italic;
+      color: #555;
+      background: #fff8ef;
+      border-left: 5px solid #ffcc70;
+      padding: 14px 18px;
+      border-radius: 8px;
+    }
+
+    /* ── Subject grid ── */
+    .subject-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .subject-item {
+      background: #f0f9f4;
+      border: 1px solid #c3e6cb;
+      border-radius: 8px;
+      padding: 9px 13px;
+      font-size: 0.93rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 7px;
+    }
+
+    .subject-item .icon {
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .subject-item.highlight {
+      background: #fff3f0;
+      border-color: #f5c6bc;
+      font-weight: 700;
+      color: #c0392b;
+    }
+
+    /* ── Info rows ── */
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 4px;
+    }
+
+    .info-table tr {
+      border-bottom: 1px solid #f0e8df;
+    }
+
+    .info-table tr:last-child {
+      border-bottom: none;
+    }
+
+    .info-table td {
+      padding: 9px 6px;
+      font-size: 0.95rem;
+      vertical-align: top;
+    }
+
+    .info-table td:first-child {
+      font-weight: 600;
+      color: #666;
+      white-space: nowrap;
+      width: 38%;
+    }
+
+    /* ── Fee rows ── */
+    .fee-list {
+      list-style: none;
+      margin-top: 4px;
+    }
+
+    .fee-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 9px 0;
+      border-bottom: 1px dashed #e0d5c8;
+      font-size: 0.94rem;
+      gap: 12px;
+    }
+
+    .fee-list li:last-child {
+      border-bottom: none;
+    }
+
+    .fee-list li .label {
+      color: #555;
+      flex: 1;
+    }
+
+    .fee-list li .amount {
+      font-weight: 700;
+      color: #e07020;
+      white-space: nowrap;
+    }
+
+    .fee-note {
+      font-size: 0.86rem;
+      color: #777;
+      margin-top: 10px;
+      background: #fffbf0;
+      border-radius: 6px;
+      padding: 10px 13px;
+      border: 1px solid #ffe5a0;
+    }
+
+    /* ── Notice box ── */
+    .notice-box {
+      background: #fff5f5;
+      border: 1.5px solid #f5c6c6;
+      border-radius: 10px;
+      padding: 16px 18px;
+      font-size: 0.94rem;
+      color: #7b2020;
+      line-height: 1.8;
+    }
+
+    .notice-box .pin-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 6px;
+      font-size: 1rem;
+    }
+
+    /* ── Contact ── */
+    .contact-block {
+      text-align: center;
+      padding: 6px 0;
+    }
+
+    .contact-block a {
+      display: inline-block;
+      margin-top: 10px;
+      background: #34a853;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 12px rgba(52,168,83,0.3);
+      transition: background 0.2s;
+    }
+
+    .contact-block a:hover {
+      background: #2a8844;
+    }
+
+    .contact-block .or-text {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.82rem;
+      color: #aaa;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 500px) {
+      header h1 { font-size: 1.4rem; }
+      .card { padding: 18px 16px; }
+      .subject-grid { grid-template-columns: 1fr; }
+      .info-table td:first-child { width: 44%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ════════════════ HEADER ════════════════ -->
+  <header>
+    <div class="star-line">&#11088; &#11088; &#11088;</div>
+    <h1>শিশুর মেধা বিকাশ Play Group</h1>
+    <div class="subtitle">February 2026</div>
+  </header>
+
+  <main>
+
+    <!-- ── About ── -->
+    <section class="card gold">
+      <h2>&#127807; Play &amp; Learn Homeschooling Play Group</h2>
+      <p class="tagline">
+        খেলতে খেলতেই লেখাপড়ার শুরু—যাতে শিশুর পড়াশোনার প্রতি স্বাভাবিক আগ্রহ তৈরি হয় এবং শেখা কখনোই বিরক্তিকর না লাগে।
+        আনন্দের মধ্য দিয়েই শেখা আমাদের মূল লক্ষ্য।
+      </p>
+    </section>
+
+    <!-- ── Curriculum ── -->
+    <section class="card green">
+      <h2>&#128218; আমাদের হোমস্কুলিংয়ে যা যা শেখানো হবে</h2>
+      <div class="subject-grid">
+        <div class="subject-item highlight">
+          <span class="icon">&#128309;</span>
+          <span>লেখা শেখায় বিশেষ গুরুত্ব</span>
+        </div>
+        <div class="subject-item">
+          <span class="icon">&#9830;&#65039;</span>
+          <span>ইসলামিক আদব, আখলাক ও দোয়া শিক্ষা</span>
+        </div>
+        <div class="subject-item">
+          <span class="icon">&#9830;&#65039;</span>
+          <span>আরবি, বাংলা, ইংরেজি, অংক, বিজ্ঞান</span>
+        </div>
+        <div class="subject-item">
+          <span class="icon">&#9830;&#65039;</span>
+          <span>ছবি আঁকা ও ক্রাফটিং</span>
+        </div>
+        <div class="subject-item">
+          <span class="icon">&#9830;&#65039;</span>
+          <span>Science Experiment</span>
+        </div>
+        <div class="subject-item">
+          <span class="icon">&#9830;&#65039;</span>
+          <span>IQ &amp; Brain Development Activities</span>
+        </div>
+        <div class="subject-item">
+          <span class="icon">&#9830;&#65039;</span>
+          <span>General Knowledge</span>
+        </div>
+        <div class="subject-item">
+          <span class="icon">&#9830;&#65039;</span>
+          <span>Communication &amp; Life Skill Development</span>
+        </div>
+        <div class="subject-item">
+          <span class="icon">&#9830;&#65039;</span>
+          <span>মনোযোগ, স্মৃতিশক্তি ও Problem Solving Skill বৃদ্ধি</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Schedule ── -->
+    <section class="card blue">
+      <h2>&#9200; ক্লাস ও ভর্তির তথ্য</h2>
+      <table class="info-table">
+        <tr>
+          <td>মেয়াদ</td>
+          <td>৬ মাস (জানুয়ারি ২০২৬ থেকে শুরু, ইনশাআল্লাহ)</td>
+        </tr>
+        <tr>
+          <td>বয়স</td>
+          <td>৩ বছর ৮ মাস – ৫ বছর</td>
+        </tr>
+        <tr>
+          <td>ক্লাসের দিন</td>
+          <td>সপ্তাহে ২ দিন — রবিবার ও বৃহস্পতিবার</td>
+        </tr>
+        <tr>
+          <td>সময়</td>
+          <td>সন্ধ্যা ৭:০০টা – ৮:০০টা</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- ── Fees ── -->
+    <section class="card">
+      <h2>&#128176; ফি বিবরণ</h2>
+      <ul class="fee-list">
+        <li>
+          <span class="label">শিক্ষা উপকরণ ফি (এককালীন)</span>
+          <span class="amount">১২৯০ টাকা</span>
+        </li>
+        <li>
+          <span class="label">মাসিক বেতন</span>
+          <span class="amount">৮৯০ টাকা</span>
+        </li>
+        <li>
+          <span class="label">কুরিয়ার খরচ – ঢাকার ভেতরে</span>
+          <span class="amount">৭০ টাকা</span>
+        </li>
+        <li>
+          <span class="label">কুরিয়ার খরচ – ঢাকার বাইরে</span>
+          <span class="amount">১৩০ টাকা</span>
+        </li>
+      </ul>
+      <p class="fee-note">
+        &#128204; ভর্তির সময় শুধুমাত্র শিক্ষা উপকরণ ফি (১২৯০ টাকা) প্রদান করতে হবে।<br />
+        উপকরণের মধ্যে রয়েছে: বই, ডিসপ্লে ফাইল, খাতা, ওয়ার্কশীট, ক্লে, কাঁচি, পেন্সিল, ইরেজার, কাটার ও অন্যান্য স্টেশনারি।
+        সব কিছু হোম ডেলিভারি করা হবে।
+      </p>
+    </section>
+
+    <!-- ── Important Notice ── -->
+    <section class="card red">
+      <h2>&#128204; গুরুত্বপূর্ণ বিজ্ঞপ্তি</h2>
+      <div class="notice-box">
+        <div class="pin-row">
+          <span>&#128204;&#128204;&#128204;</span>
+          <span>
+            মিস পর্দা করেন। মিসের চেহারা এবং কন্ঠ আপনাদের সাথে আমানত।
+            ক্লাসের সময় শুধু <strong>মেয়ে অভিভাবক</strong> উপস্থিত থাকতে পারবেন।
+            পাশে কোনো পুরুষ উপস্থিত থাকতে পারবেন না।
+          </span>
+        </div>
+        <p>
+          যদি কোনো পুরুষ উপস্থিত থাকেন বা মিসের কন্ঠ শুনতে পান — আমানত রক্ষা না করার দায়ভার সম্পূর্ণ অভিভাবকের।
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Contact ── -->
+    <section class="card purple">
+      <h2>&#128222; যোগাযোগ</h2>
+      <div class="contact-block">
+        <p>আগ্রহী হলে নিচের নম্বরে কল করুন অথবা জানান:</p>
+        <a href="tel:01685793049">&#128222; 01685793049</a>
+        <p class="or-text">অথবা WhatsApp / Call</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    শিশুর মেধা বিকাশ Play Group &mdash; February 2026
+  </footer>
+
+</body>
+</html>

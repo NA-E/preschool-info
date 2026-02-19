@@ -240,6 +240,149 @@
       color: #888;
     }
 
+    /* ── Daily Log ── */
+    .daily-log-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+
+    .day-entry {
+      background: #fff;
+      border-radius: 14px;
+      padding: 22px 24px;
+      box-shadow: 0 3px 14px rgba(0,0,0,0.08);
+      border-left: 6px solid #4285f4;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .day-date-badge {
+      display: inline-block;
+      background: #4285f4;
+      color: #fff;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+      margin-bottom: 14px;
+    }
+
+    /* worksheet pages */
+    .page-section h3,
+    .meet-section h3,
+    .msg-section h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #555;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .page-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .page-pill {
+      background: #e8f0fe;
+      color: #1a73e8;
+      font-weight: 700;
+      font-size: 1rem;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #a8c7fa;
+    }
+
+    /* Google Meet */
+    .meet-box {
+      background: #f0f9f4;
+      border: 1.5px solid #a8d5b8;
+      border-radius: 10px;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .meet-code-text {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #1e7e44;
+      letter-spacing: 2px;
+    }
+
+    .meet-box a {
+      background: #34a853;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    /* Teacher message */
+    .msg-section {
+      border-top: 1px dashed #e0d5c8;
+      padding-top: 16px;
+    }
+
+    .msg-bubble {
+      background: #fffbf0;
+      border: 1px solid #ffe5a0;
+      border-radius: 10px;
+      padding: 16px 18px;
+      font-size: 0.93rem;
+      color: #444;
+      line-height: 1.85;
+    }
+
+    .msg-bubble p {
+      margin-bottom: 10px;
+    }
+
+    .msg-bubble p:last-child {
+      margin-bottom: 0;
+    }
+
+    .value-row {
+      display: flex;
+      justify-content: space-between;
+      background: #fff8e1;
+      border-radius: 7px;
+      padding: 8px 12px;
+      margin: 6px 0;
+      font-size: 0.91rem;
+      gap: 8px;
+    }
+
+    .value-row .v-label { color: #666; }
+    .value-row .v-amount { font-weight: 700; color: #e07020; white-space: nowrap; }
+
+    .tip-box {
+      background: #e8f5e9;
+      border: 1px solid #a5d6a7;
+      border-radius: 8px;
+      padding: 11px 14px;
+      font-size: 0.9rem;
+      color: #2e7d32;
+      margin-top: 10px;
+    }
+
     /* ── Footer ── */
     footer {
       text-align: center;
@@ -275,6 +418,81 @@
         খেলতে খেলতেই লেখাপড়ার শুরু—যাতে শিশুর পড়াশোনার প্রতি স্বাভাবিক আগ্রহ তৈরি হয় এবং শেখা কখনোই বিরক্তিকর না লাগে।
         আনন্দের মধ্য দিয়েই শেখা আমাদের মূল লক্ষ্য।
       </p>
+    </section>
+
+    <!-- ── Daily Class Log ── -->
+    <section class="card blue" style="border-left-color:#4285f4;">
+      <h2>&#128197; ক্লাসের দৈনিক তথ্য</h2>
+
+      <!-- ══ 19 February 2026 ══ -->
+      <div class="day-entry">
+        <div>
+          <span class="day-date-badge">&#128197; ১৯ ফেব্রুয়ারি ২০২৬ — বৃহস্পতিবার</span>
+
+          <!-- Worksheet pages -->
+          <div class="page-section">
+            <h3>&#128196; আজকের ওয়ার্কশীট পেজ নম্বর</h3>
+            <p style="font-size:0.85rem;color:#888;margin-bottom:10px;">
+              নিচের পেজগুলো সম্পূর্ণ সেট থেকে আলাদা করে রাখুন।
+            </p>
+            <div class="page-pills">
+              <div class="page-pill">১</div>
+              <div class="page-pill">২৯</div>
+              <div class="page-pill">৩৩</div>
+              <div class="page-pill">৩৬</div>
+              <div class="page-pill">৫৪</div>
+              <div class="page-pill">৫৫</div>
+              <div class="page-pill">৬১</div>
+            </div>
+          </div>
+
+          <!-- Google Meet -->
+          <div class="meet-section" style="margin-top:18px;">
+            <h3>&#128249; Google Meet ক্লাস কোড</h3>
+            <div class="meet-box">
+              <span class="meet-code-text">zkk-zmqa-mfy</span>
+              <a href="https://meet.google.com/zkk-zmqa-mfy" target="_blank" rel="noopener">&#128279; Join Meet</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teacher's message -->
+        <div class="msg-section">
+          <h3>&#128172; মিসের বার্তা</h3>
+          <div class="msg-bubble">
+            <p><strong>অনেকেই প্রশ্ন করেছেন — ১২৯০ টাকা কিসের জন্য?</strong></p>
+
+            <p>আমরা সবচেয়ে কম খরচে মানসম্মত কোর্স পরিচালনা করি। নিচে দেখুন আপনি কী কী পাচ্ছেন:</p>
+
+            <div class="value-row">
+              <span class="v-label">&#127752; ৩৫০–৪০০ পিস কালার ওয়ার্কশীট (৬ মাসে)</span>
+              <span class="v-amount">≈ ২০০০ টাকা</span>
+            </div>
+            <div class="value-row">
+              <span class="v-label">&#127873; প্রথম মাসের শিক্ষা উপকরণ (বই, খাতা, ক্লে ইত্যাদি)</span>
+              <span class="v-amount">≈ ৭০০–৮০০ টাকা</span>
+            </div>
+            <div class="value-row" style="background:#fff3e0;font-weight:700;">
+              <span class="v-label">&#128197; মোট উপকরণের প্রকৃত মূল্য</span>
+              <span class="v-amount">≈ ২৭০০–৩০০০ টাকা</span>
+            </div>
+            <div class="value-row" style="background:#e8f5e9;">
+              <span class="v-label">&#9989; আমাদের রেজিস্ট্রেশন ফি মাত্র</span>
+              <span class="v-amount" style="color:#2e7d32;">১২৯০ টাকা</span>
+            </div>
+
+            <p style="margin-top:12px;">
+              মাসিক বেতন ৮৯০ টাকা + ডেলিভারি চার্জ দিয়ে প্রতি মাসের উপকরণ রিসিভ করতে হবে।
+              সপ্তাহে ২ দিন ক্লাসে সব বিষয়ের পাশাপাশি অনেক কিছু শেখানো হবে — যা বাসায় আলাদা টিউটর রাখলেও পাওয়া সম্ভব না।
+            </p>
+
+            <div class="tip-box">
+              &#128161; <strong>ইমেইল পরামর্শ:</strong> ক্লাসের জন্য শিশুর নামে একটি আলাদা Gmail অ্যাকাউন্ট খুলুন।
+              এতে শিশুকে নাম ধরে ডাকতে সুবিধা হবে এবং আপনার ব্যক্তিগত বা অফিসের ইমেইল আলাদা থাকবে।
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ── Curriculum ── -->
